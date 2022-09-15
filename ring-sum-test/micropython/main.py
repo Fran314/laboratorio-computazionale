@@ -1,7 +1,3 @@
-import hashlib
-import binascii
-import time
-
 import crypto_context
 import random
 
@@ -13,5 +9,6 @@ vals = [random.getrandbits(16) for i in range(n)]
 cfrs = [ccs[i].encode(vals[i], 0) for i in range(n)]
 clear_sum = sum(vals)
 cipher_sum = sum(cfrs)
-# print('\n'.join(["{}\t{}".format(vals[i], cfrs[i]) for i in range(n)]))
+print('\n'.join(["{}\t{}".format(vals[i], cfrs[i]) for i in range(n)]))
+print()
 print("{}\t{}".format(clear_sum, cipher_sum))
