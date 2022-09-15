@@ -29,12 +29,12 @@ Il tempo di esecuzione per i test `serialized` risulta molto maggiore nella prim
 I risultati indicano la media dei tempi di esecuzione delle varie sezioni mediati su 5000 esecuzioni per tipo.
 
 I test sono stati eseguiti sulla seguente macchina
-```
-Raspberry Pi 4
-running Raspberry Pi Os v11 (bullseye) on
-Quad core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5GHz
-2GB LPDDR4-3200 SDRAM
-```
+| Category | Value                                             |
+| :------: | ------------------------------------------------- |
+|  Device  | Raspberry Pi 4                                    |
+|    OS    | Raspberry Pi Os 64bit v11 (bullseye)              |
+|   CPU    | Quad core Cortex-A72 (ARM v8) 64-bit SoC @ 1.5GHz |
+|   RAM    | 2GB LPDDR4-3200 SDRAM                             |
 
 ### Serialized-bfv
 | Tipo                           | Tempo (ms) |
