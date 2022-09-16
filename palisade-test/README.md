@@ -1,4 +1,4 @@
-# Palisade Test
+# PALISADE Test
 
 Questi sono i test che ho scritto per testare la performance della libreria PALISADE sul Raspberry Pi 4.
 
