@@ -20,16 +20,12 @@ def hmac_sha256(key, val):
 
 class CryptoContext:
     def __init__(self, r_prev, r_succ):
-        self.r_prev = r_prev
-        self.r_succ = r_succ
-    
-    def setKeys(self, r_prev, r_succ):
-        self.r_prev = r_prev
-        self.r_succ = r_succ
+        self.r_prev = sha256(itb(r_prev))
+        self.r_succ = sha256(itb(r_succ))
     
     def encode(self, val, time):
-        r_t_prev = sha256(hmac_sha256(sha256(itb(self.r_prev)), itb(time)))
-        r_t_succ = sha256(hmac_sha256(sha256(itb(self.r_succ)), itb(time)))
+        r_t_prev = sha256(hmac_sha256(self.r_prev, itb(time)))
+        r_t_succ = sha256(hmac_sha256(self.r_succ, itb(time)))
         r_t = bti(r_t_succ) - bti(r_t_prev)
         
         return val + r_t
