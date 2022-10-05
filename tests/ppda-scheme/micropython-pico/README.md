@@ -1,6 +1,6 @@
-# Test - Schema *multiparty computation* in micropython (Raspberry Pi Pico W)
+# Test - Schema PPDA in micropython (Raspberry Pi Pico W)
 
-In questa cartella è possibile trovare il codice sorgente dei test relativi allo schema in *multiparty computation* pensati per il Raspberry Pi Pico W e quindi scritti in micropython.
+In questa cartella è possibile trovare il codice sorgente dei test relativi allo schema PPDA pensati per il Raspberry Pi Pico W e quindi scritti in micropython.
 
 I test sono stati eseguiti sulla seguente macchina
 | Category  | Value                              |

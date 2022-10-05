@@ -1,6 +1,6 @@
-# Test - Schema *multiparty computation* (sequenziale) in C++ (Raspberry Pi 4)
+# Test - Schema PPDA (parallelo) in C++ (Raspberry Pi 4)
 
-In questa cartella è possibile trovare il codice sorgente dei test relativi allo schema in *multiparty computation* con cifratura eseguita sequenzialmente pensati per il Raspberry Pi 4.
+In questa cartella è possibile trovare il codice sorgente dei test relativi allo schema PPDA con cifratura eseguita parallelamente pensati per il Raspberry Pi 4.
 
 I test sono stati eseguiti sulla seguente macchina
 | Category | Value                                             |
@@ -11,14 +11,14 @@ I test sono stati eseguiti sulla seguente macchina
 |   RAM    | 2GB LPDDR4-3200 SDRAM                             |
 
 ## Compilazione
-Per compilare, è necessario assicurarsi di aver installato la libreria `libssl-dev`
+Per compilare, è necessario assicurarsi di aver installato le librerie `libssl-dev` e `libomp-dev`
 ```bash
-sudo apt-get install libssl-dev
+sudo apt-get install libssl-dev libomp-dev
 ```
 
 Per compilare il codice, eseguite il seguente comando
 ```bash
-g++ main.cpp -lcrypto -o test
+g++ main.cpp -lcrypto -fopenmp -o test
 ```
 
 ## Test

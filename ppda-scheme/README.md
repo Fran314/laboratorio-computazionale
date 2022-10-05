@@ -1,4 +1,4 @@
-# Schema in *multiparty computation*
+# Schema PPDA
 
 ## Versione in C++
 ### Compilazione
